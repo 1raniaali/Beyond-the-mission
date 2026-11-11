@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-serif-cinzel: 'Cinzel', serif;
+    --font-mono-code: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    background-color: #05060d;
+    color: #e2e8f0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom space scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #080914;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e2238;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3b4267;
+}
+
+/* Cosmic glows & utility */
+.font-cinzel {
+  font-family: var(--font-serif-cinzel);
+}
+
+.font-space {
+  font-family: var(--font-heading);
+}
+
+.font-code {
+  font-family: var(--font-mono-code);
+}
+
+.cosmic-radial-glow {
+  background: radial-gradient(circle at 50% 30%, rgba(120, 80, 240, 0.15) 0%, rgba(20, 30, 80, 0.08) 45%, transparent 70%);
+}
+
+.mars-radial-glow {
+  background: radial-gradient(circle at 50% 30%, rgba(240, 90, 40, 0.18) 0%, rgba(80, 20, 20, 0.08) 50%, transparent 75%);
+}
+
+.lunar-radial-glow {
+  background: radial-gradient(circle at 50% 30%, rgba(180, 200, 240, 0.15) 0%, rgba(40, 50, 80, 0.08) 50%, transparent 75%);
+}
+
+.glass-panel {
+  background: rgba(13, 16, 32, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
+}
+
+.glass-panel-hover:hover {
+  border-color: rgba(147, 197, 253, 0.25);
+  box-shadow: 0 12px 35px -8px rgba(99, 102, 241, 0.2);
+}
